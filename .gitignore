@@ -1,0 +1,31 @@
+# 环境与密钥（绝不提交）
+.env
+.env.local
+setup_key.bat
+
+# 运行产物
+out/
+samples/*_已批注.docx
+*.log
+
+# 临时与调试文件
+_probe/
+_inbox/
+_verify.py
+_chk.py
+_peek.py
+_db.py
+_*.mjs
+_*.bat
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
