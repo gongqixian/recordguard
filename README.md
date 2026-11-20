@@ -8,15 +8,17 @@
 
 ## 它长这样
 
-![首页](docs/1-home.png)
+> 界面截图已托管在 CDN。如果图片没有加载出来，可以直接打开 [docs/](https://github.com/gongqixian/recordguard/tree/main/docs) 目录看图。
+
+![首页](https://gcore.jsdelivr.net/gh/gongqixian/recordguard@main/docs/1-home.png)
 
 *首页：5 份示例各有分工，每份都能下载原文件对照。*
 
-![结果](docs/2-result.png)
+![结果](https://gcore.jsdelivr.net/gh/gongqixian/recordguard@main/docs/2-result.png)
 
 *上半是"我从文件里读到了什么"——不需要相信系统，对着原文自己核一遍；下半是"发现了什么"，每条问题四段：级别、问题描述、修改建议、以及模型读完同批号其他行后写的**分析**。*
 
-![拒绝](docs/3-reject.png)
+![拒绝](https://gcore.jsdelivr.net/gh/gongqixian/recordguard@main/docs/3-reject.png)
 
 *传一份不是检测记录的文件（费用明细表）：它明确拒绝，并交代自己看到了什么。**知道什么时候不该干，比什么都能干更重要。***
 
@@ -102,7 +104,7 @@
 | F1 | 89.3% | **100%** |
 | 单份耗时 | 约 2.9 秒 | 约 0.03 秒 |
 
-![对照结果](docs/4-matrix.png)
+![对照结果](https://gcore.jsdelivr.net/gh/gongqixian/recordguard@main/docs/4-matrix.png)
 
 *17 份文件逐个对比。红色是它报了问题的，但人工确认这一份根本没有问题。*
 
