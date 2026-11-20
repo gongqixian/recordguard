@@ -1,0 +1,20 @@
+{"name": "规范数据（期望 0 处）", "file": "sample_clean.docx", "manual": {}, "expect": []}
+{"name": "含问题数据（8 类缺陷全埋）", "file": "sample_errors.docx", "manual": {}, "expect": [{"rule": "R01"}, {"rule": "R02"}, {"rule": "R03"}, {"rule": "R04"}, {"rule": "R05"}, {"rule": "R06"}, {"rule": "R07"}, {"rule": "H01"}]}
+{"name": "格式不规范（应要求人工确认列含义）", "file": "sample_messy.docx", "manual": {}, "expect": []}
+{"name": "格式不规范 + 人工指定第7列=Ct值", "file": "sample_messy.docx", "manual": {"0": {"6": "ct"}}, "expect": [{"rule": "R06"}, {"rule": "R07"}, {"rule": "R08"}]}
+{"name": "单缺陷 R01 结果缺失", "file": "variant_v01.docx", "manual": {}, "expect": [{"rule": "R01"}]}
+{"name": "单缺陷 R02 同编号同批号重复", "file": "variant_v02.docx", "manual": {}, "expect": [{"rule": "R02"}]}
+{"name": "单缺陷 R03 批间结果不一致", "file": "variant_v03.docx", "manual": {}, "expect": [{"rule": "R03"}]}
+{"name": "单缺陷 R04 结论与结果矛盾", "file": "variant_v04.docx", "manual": {}, "expect": [{"rule": "R04"}]}
+{"name": "单缺陷 R05 阳性但 Ct 超上限", "file": "variant_v05.docx", "manual": {}, "expect": [{"rule": "R05"}]}
+{"name": "单缺陷 R06 年龄越界", "file": "variant_v06.docx", "manual": {}, "expect": [{"rule": "R06"}]}
+{"name": "单缺陷 R07 日期不存在", "file": "variant_v07.docx", "manual": {}, "expect": [{"rule": "R07"}]}
+{"name": "单缺陷 R08 结果值不在值域", "file": "variant_v08.docx", "manual": {}, "expect": [{"rule": "R08"}]}
+{"name": "双缺陷 R01 + R06", "file": "variant_v09.docx", "manual": {}, "expect": [{"rule": "R01"}, {"rule": "R06"}]}
+{"name": "双缺陷 R04 + R05", "file": "variant_v10.docx", "manual": {}, "expect": [{"rule": "R04"}, {"rule": "R05"}]}
+{"name": "双缺陷 R02 + R07", "file": "variant_v11.docx", "manual": {}, "expect": [{"rule": "R02"}, {"rule": "R07"}]}
+{"name": "三缺陷 R03 + R06 + R08", "file": "variant_v12.docx", "manual": {}, "expect": [{"rule": "R03"}, {"rule": "R06"}, {"rule": "R08"}]}
+{"name": "单缺陷 R05 阴性但 Ct 偏低", "file": "variant_v13.docx", "manual": {}, "expect": [{"rule": "R05"}]}
+{"name": "三缺陷 R01 + R02 + R08", "file": "variant_v14.docx", "manual": {}, "expect": [{"rule": "R01"}, {"rule": "R02"}, {"rule": "R08"}]}
+{"name": "双缺陷 R05 + R06（Ct=99 双越界）", "file": "variant_v15.docx", "manual": {}, "expect": [{"rule": "R05"}, {"rule": "R06"}]}
+{"name": "格式不规范 + 人工指定该列不参与校验", "file": "sample_messy.docx", "manual": {"0": {"6": ""}}, "expect": [{"rule": "R06"}, {"rule": "R07"}, {"rule": "R08"}]}
